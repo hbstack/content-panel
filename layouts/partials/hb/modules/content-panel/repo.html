@@ -1,0 +1,85 @@
+{{- $params := site.Params.hb.content_panel.repo }}
+{{- $page := . }}
+{{- with $params }}
+  {{- $github := dict
+    "baseURL" "https://github.com/%s"
+    "editURL" "%s/edit/%s/%s/%s"
+    "viewURL" "%s/blob/%s/%s/%s"
+    "commitURL" "%s/commit/%s"
+  }}
+  {{- $gitlab := dict
+    "baseURL" "https://gitlab.com/%s"
+    "editURL" "%s/-/edit/%s/%s/%s"
+    "viewURL" "%s/-/blob/%s/%s/%s"
+    "commitURL" "%s/-/commit/%s"
+  }}
+  {{- $services := dict
+    "github" $github
+    "gitlab" $gitlab
+  }}
+  {{- with index $services .service }}
+    {{- $contentDir := default "content" site.Language.ContentDir }}
+    {{- with .subpath }}
+      {{- $contentDir = printf "%s/%s" . $contentDir }}
+    {{- end }}
+    {{- $baseURL := printf .baseURL $params.repo }}
+    {{- $filepath := "" }}
+    {{- with $page.File }}
+      {{- $filepath = .Path }}
+    {{- end }}
+    {{- $editURL := printf .editURL $baseURL $params.branch $contentDir $filepath }}
+    {{- $viewURL := printf .viewURL $baseURL $params.branch $contentDir $filepath }}
+    {{- $commitURL := .commitURL }}
+    {{- $editIcon := dict "vendor" "bs" "name" "pencil-square" }}
+    {{- $pencilIcon := dict "vendor" "bs" "name" "pencil" "className" "me-2" }}
+    {{- $viewIcon := dict "vendor" "bs" "name" "eye" "className" "me-2" }}
+    {{- $commitIcon := dict "vendor" "bs" "name" "git" "className" "me-2" }}
+    <div
+      class="hb-content-panel-item hb-content-panel-repo dropup-center dropup">
+      <button
+        class="btn btn-link text-body"
+        type="button"
+        title="Edit"
+        data-bs-toggle="dropdown"
+        aria-expanded="false">
+        {{- partialCached "icons/icon" $editIcon $editIcon }}
+      </button>
+      <ul class="dropdown-menu">
+        <li>
+          <a
+            class="dropdown-item"
+            href="{{ $editURL }}"
+            target="_blank"
+            rel="noreferrer noopener">
+            {{- partialCached "icons/icon" $pencilIcon $pencilIcon -}}
+            {{- i18n "edit_the_page" -}}
+          </a>
+        </li>
+        <li>
+          <a
+            class="dropdown-item"
+            href="{{ $viewURL }}"
+            target="_blank"
+            rel="noreferrer noopener">
+            {{- partialCached "icons/icon" $viewIcon $viewIcon -}}
+            {{- i18n "view_the_page_source" -}}
+          </a>
+        </li>
+        {{- with $page.GitInfo }}
+          <li>
+            <a
+              class="dropdown-item"
+              href="{{ printf $commitURL $baseURL .Hash }}"
+              target="_blank"
+              rel="noreferrer noopener">
+              {{- partialCached "icons/icon" $commitIcon $commitIcon -}}
+              {{- .AbbreviatedHash -}}
+            </a>
+          </li>
+        {{- end }}
+      </ul>
+    </div>
+  {{- else }}
+    {{- warnf "[content-panel] unsupported service: %s" .service }}
+  {{- end }}
+{{- end }}

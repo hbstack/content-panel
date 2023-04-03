@@ -1,0 +1,17 @@
+.hb-content-panel-wrapper {
+    bottom: $hb-content-panel-bottom;
+    opacity: 0.8;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.hb-content-panel-item {
+    &:not(:last-child) {
+        &::after {
+            color: var(--#{$prefix}border-color);
+            content: "|";
+        }
+    }
+}
