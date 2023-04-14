@@ -19,6 +19,7 @@
   }}
   {{- with index $services .service }}
     {{- $contentDir := default "content" site.Language.ContentDir }}
+    {{- $branch := default "main" $params.branch }}
     {{- with .subpath }}
       {{- $contentDir = printf "%s/%s" . $contentDir }}
     {{- end }}
@@ -27,8 +28,8 @@
     {{- with $page.File }}
       {{- $filepath = .Path }}
     {{- end }}
-    {{- $editURL := printf .editURL $baseURL $params.branch $contentDir $filepath }}
-    {{- $viewURL := printf .viewURL $baseURL $params.branch $contentDir $filepath }}
+    {{- $editURL := printf .editURL $baseURL $branch $contentDir $filepath }}
+    {{- $viewURL := printf .viewURL $baseURL $branch $contentDir $filepath }}
     {{- $commitURL := .commitURL }}
     {{- $editIcon := dict "vendor" "bs" "name" "pencil-square" }}
     {{- $pencilIcon := dict "vendor" "bs" "name" "pencil" "className" "me-2" }}
