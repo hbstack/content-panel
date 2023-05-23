@@ -3,33 +3,34 @@
 {{- with $params }}
   {{- $github := dict
     "baseURL" "https://github.com/%s"
-    "editURL" "%s/edit/%s/%s/%s"
-    "viewURL" "%s/blob/%s/%s/%s"
+    "editURL" "%s/edit/%s/%s"
+    "viewURL" "%s/blob/%s/%s"
     "commitURL" "%s/commit/%s"
   }}
   {{- $gitlab := dict
     "baseURL" "https://gitlab.com/%s"
-    "editURL" "%s/-/edit/%s/%s/%s"
-    "viewURL" "%s/-/blob/%s/%s/%s"
+    "editURL" "%s/-/edit/%s/%s"
+    "viewURL" "%s/-/blob/%s/%s"
     "commitURL" "%s/-/commit/%s"
   }}
   {{- $services := dict
     "github" $github
     "gitlab" $gitlab
   }}
+  {{- $root := partialCached "hb/modules/content-panel/functions/working-directory" . }}
   {{- with index $services .service }}
-    {{- $contentDir := default "content" site.Language.ContentDir }}
     {{- $branch := default "main" $params.branch }}
+    {{- $subpath := "" }}
     {{- with .subpath }}
-      {{- $contentDir = printf "%s/%s" . $contentDir }}
+      {{- $subpath = printf "/%s" . $subpath }}
     {{- end }}
     {{- $baseURL := printf .baseURL $params.repo }}
     {{- $filepath := "" }}
     {{- with $page.File }}
-      {{- $filepath = .Path }}
+      {{- $filepath = printf "%s%s" $subpath (strings.TrimPrefix $root .Filename) -}}
     {{- end }}
-    {{- $editURL := printf .editURL $baseURL $branch $contentDir $filepath }}
-    {{- $viewURL := printf .viewURL $baseURL $branch $contentDir $filepath }}
+    {{- $editURL := printf .editURL $baseURL $branch $filepath }}
+    {{- $viewURL := printf .viewURL $baseURL $branch $filepath }}
     {{- $commitURL := .commitURL }}
     {{- $editIcon := dict "vendor" "bs" "name" "pencil-square" }}
     {{- $pencilIcon := dict "vendor" "bs" "name" "pencil" "className" "me-2" }}
