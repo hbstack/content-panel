@@ -21,8 +21,8 @@
   {{- with index $services .service }}
     {{- $branch := default "main" $params.branch }}
     {{- $subpath := "" }}
-    {{- with .subpath }}
-      {{- $subpath = printf "/%s" . $subpath }}
+    {{- with $params.subpath }}
+      {{- $subpath = printf "/%s" . }}
     {{- end }}
     {{- $baseURL := printf .baseURL $params.repo }}
     {{- $filepath := "" }}
