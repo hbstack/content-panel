@@ -29,8 +29,6 @@
     {{- with $page.File }}
       {{- $filepath = printf "%s%s" $subpath (strings.TrimPrefix $root .Filename) -}}
     {{- end }}
-    {{/* replace the path separator to / when running Hugo server on Windows. */}}
-    {{- $filepath = replace $filepath "\\" "/" }}
     {{- $editURL := printf .editURL $baseURL $branch $filepath }}
     {{- $viewURL := printf .viewURL $baseURL $branch $filepath }}
     {{- $commitURL := .commitURL }}
