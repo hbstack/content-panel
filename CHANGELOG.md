@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.2](https://github.com/hbstack/content-panel/compare/v0.2.1...v0.2.2) (2023-09-07)
+
+
+### Bug Fixes
+
+* correct the subpath parameter ([2a36361](https://github.com/hbstack/content-panel/commit/2a36361e0d95899276e0a7fe5ad22f14dc4c065e))
+* replace the path separator on Windows ([77cb3e2](https://github.com/hbstack/content-panel/commit/77cb3e296ed4b1273fa8b52acf5d4f2841776f88))
+
 ## [0.2.1](https://github.com/hbstack/content-panel/compare/v0.2.0...v0.2.1) (2023-05-23)
 
 
