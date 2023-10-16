@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.3](https://github.com/hbstack/content-panel/compare/v0.2.2...v0.2.3) (2023-10-16)
+
+
+### Styles 🎨
+
+* do not modularize the widget ([5507845](https://github.com/hbstack/content-panel/commit/550784594570d056842597d72bd088e0bb73c942))
+
 ## [0.2.2](https://github.com/hbstack/content-panel/compare/v0.2.1...v0.2.2) (2023-09-07)
 
 
