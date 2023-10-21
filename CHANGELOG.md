@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://github.com/hbstack/content-panel/compare/v0.2.3...v0.3.0) (2023-10-21)
+
+
+### Features ✨
+
+* **i18n:** create ms.toml ([#26](https://github.com/hbstack/content-panel/issues/26)) ([ba4da7e](https://github.com/hbstack/content-panel/commit/ba4da7e5a0cdfb54bf8ab20f08b7feaeeb048c57))
+
 ## [0.2.3](https://github.com/hbstack/content-panel/compare/v0.2.2...v0.2.3) (2023-10-16)
 
 
