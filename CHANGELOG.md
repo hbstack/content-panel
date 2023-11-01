@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.1](https://github.com/hbstack/content-panel/compare/v0.4.0...v0.4.1) (2023-11-01)
+
+
+### Bug Fixes 🐞
+
+* correct the broken translations links when enabling multiple domains ([#31](https://github.com/hbstack/content-panel/issues/31)) ([838ea3d](https://github.com/hbstack/content-panel/commit/838ea3db177e9e0aaa04e3bd579db8b91d4d26b0))
+
 ## [0.4.0](https://github.com/hbstack/content-panel/compare/v0.3.0...v0.4.0) (2023-11-01)
 
 
