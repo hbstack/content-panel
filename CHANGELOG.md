@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://github.com/hbstack/content-panel/compare/v0.3.0...v0.4.0) (2023-11-01)
+
+
+### Features ✨
+
+* **i18n:** add Russian translations ([#28](https://github.com/hbstack/content-panel/issues/28)) ([a6f6bd3](https://github.com/hbstack/content-panel/commit/a6f6bd389d37b55f4eb24ca624029c9e1b137351))
+
 ## [0.3.0](https://github.com/hbstack/content-panel/compare/v0.2.3...v0.3.0) (2023-10-21)
 
 
