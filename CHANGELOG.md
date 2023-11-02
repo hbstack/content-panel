@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://github.com/hbstack/content-panel/compare/v0.4.1...v0.5.0) (2023-11-02)
+
+
+### Features ✨
+
+* **i18n:** add FR translations ([#33](https://github.com/hbstack/content-panel/issues/33)) ([d81e1e8](https://github.com/hbstack/content-panel/commit/d81e1e8e8733fa2781cb51f07ef5bbfe83ce3264))
+
 ## [0.4.1](https://github.com/hbstack/content-panel/compare/v0.4.0...v0.4.1) (2023-11-01)
 
 
