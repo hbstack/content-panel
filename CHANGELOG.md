@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.0](https://github.com/hbstack/content-panel/compare/v0.5.0...v0.6.0) (2023-11-10)
+
+
+### Features ✨
+
+* **i18n:** create pt-br.toml ([#35](https://github.com/hbstack/content-panel/issues/35)) ([777cc5b](https://github.com/hbstack/content-panel/commit/777cc5b3a834c399f0a6495699d6273ae73a8a0f))
+
 ## [0.5.0](https://github.com/hbstack/content-panel/compare/v0.4.1...v0.5.0) (2023-11-02)
 
 
