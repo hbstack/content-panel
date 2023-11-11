@@ -1,6 +1,9 @@
 [comments]
 other = "댓글"
 
+[edit]
+other = "수정"
+
 [edit_the_page]
 other = "페이지 수정 제안"
 
