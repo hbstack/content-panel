@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.7.0](https://github.com/hbstack/content-panel/compare/v0.6.0...v0.7.0) (2023-11-11)
+
+
+### Features ✨
+
+* add the repo.service_baseurl parameter and add the gitee and codeberg services ([#41](https://github.com/hbstack/content-panel/issues/41)) ([512b617](https://github.com/hbstack/content-panel/commit/512b61752d618cbefc95fb2d28abb087b3236532))
+
+
+### Bug Fixes 🐞
+
+* **i18n:** translate the edit button ([#39](https://github.com/hbstack/content-panel/issues/39)) ([497ad27](https://github.com/hbstack/content-panel/commit/497ad277cad788309829ef0a4689b6150af5b56d))
+
 ## [0.6.0](https://github.com/hbstack/content-panel/compare/v0.5.0...v0.6.0) (2023-11-10)
 
 
