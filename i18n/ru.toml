@@ -1,6 +1,9 @@
 [comments]
 other = "Комментарии"
 
+[edit]
+other = "Редактировать"
+
 [edit_the_page]
 other = "Редактировать страницу"
 
