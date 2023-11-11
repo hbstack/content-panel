@@ -1,6 +1,9 @@
 [comments]
 other = "评论"
 
+[edit]
+other = "编辑"
+
 [edit_the_page]
 other = "编辑本页"
 

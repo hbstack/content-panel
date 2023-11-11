@@ -1,6 +1,9 @@
 [comments]
 other = "評論"
 
+[edit]
+other = "編輯"
+
 [edit_the_page]
 other = "編輯本頁"
 

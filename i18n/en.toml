@@ -1,6 +1,9 @@
 [comments]
 other = "Comments"
 
+[edit]
+other = "Edit"
+
 [edit_the_page]
 other = "Edit the page"
 
