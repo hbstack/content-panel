@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.7.1](https://github.com/hbstack/content-panel/compare/v0.7.0...v0.7.1) (2023-12-05)
+
+
+### Bug Fixes 🐞
+
+* **i18n:** update ms.toml ([#45](https://github.com/hbstack/content-panel/issues/45)) ([70c2f90](https://github.com/hbstack/content-panel/commit/70c2f90b3c1601a4481c00bdd729318acb83a835))
+
 ## [0.7.0](https://github.com/hbstack/content-panel/compare/v0.6.0...v0.7.0) (2023-11-11)
 
 
