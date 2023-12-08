@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.7.2](https://github.com/hbstack/content-panel/compare/v0.7.1...v0.7.2) (2023-12-08)
+
+
+### Bug Fixes 🐞
+
+* use commit subject instead of hash as the commit link text ([ae8e98d](https://github.com/hbstack/content-panel/commit/ae8e98d3d28f23e3c754306e175dba26b6310b9d)), closes [#44](https://github.com/hbstack/content-panel/issues/44)
+
+
+### Styles 🎨
+
+* change the margin-bottom as mb-4 ([46deac7](https://github.com/hbstack/content-panel/commit/46deac7a0f48c3b6af349aeedcf08c3ee9adb78c))
+
 ## [0.7.1](https://github.com/hbstack/content-panel/compare/v0.7.0...v0.7.1) (2023-12-05)
 
 
