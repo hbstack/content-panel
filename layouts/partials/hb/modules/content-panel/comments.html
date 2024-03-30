@@ -3,7 +3,7 @@
   "name" "chat-dots"
 }}
 {{- $icon := partialCached "icons/icon" $iconCtx $iconCtx }}
-{{- if default true .Params.comments }}
+{{- if and (default true site.Params.hb.content_panel.comments) (default true .Params.comments) }}
   <div class="hb-content-panel-item">
     <a
       href="#content-comments"
