@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.8.0](https://github.com/hbstack/content-panel/compare/v0.7.2...v0.8.0) (2024-03-30)
+
+
+### Features ✨
+
+* add the comments parameter ([#64](https://github.com/hbstack/content-panel/issues/64)) ([d474d83](https://github.com/hbstack/content-panel/commit/d474d838a0f1a23df1c19b38ca7737e1da6515c2))
+
 ## [0.7.2](https://github.com/hbstack/content-panel/compare/v0.7.1...v0.7.2) (2023-12-08)
 
 
