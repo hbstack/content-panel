@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.9.0](https://github.com/hbstack/content-panel/compare/v0.8.0...v0.9.0) (2024-04-23)
+
+
+### Features ✨
+
+* **i18n:** add German translations ([#66](https://github.com/hbstack/content-panel/issues/66)) ([1fb4857](https://github.com/hbstack/content-panel/commit/1fb48572e9827851e902bdb3ea04de03380880c7))
+
 ## [0.8.0](https://github.com/hbstack/content-panel/compare/v0.7.2...v0.8.0) (2024-03-30)
 
 
