@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.10.1](https://github.com/hbstack/content-panel/compare/v0.10.0...v0.10.1) (2024-06-02)
+
+
+### Performance Improvements ⚡️
+
+* cache partials ([#69](https://github.com/hbstack/content-panel/issues/69)) ([dbefac4](https://github.com/hbstack/content-panel/commit/dbefac461617a0f81848fef56d35a93bf5b5cd70))
+
 ## [0.10.0](https://github.com/hbstack/content-panel/compare/v0.9.0...v0.10.0) (2024-05-28)
 
 
