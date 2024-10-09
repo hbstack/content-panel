@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.10.2](https://github.com/hbstack/content-panel/compare/v0.10.1...v0.10.2) (2024-10-09)
+
+
+### Styles 🎨
+
+* add border style ([66e8e29](https://github.com/hbstack/content-panel/commit/66e8e291c1a04fdb3829ba52ecf89f8896506ea1))
+
 ## [0.10.1](https://github.com/hbstack/content-panel/compare/v0.10.0...v0.10.1) (2024-06-02)
 
 
